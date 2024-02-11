@@ -6,8 +6,8 @@
     <title>Boutique Frenchies</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./style.min.css">
     
-
 
 </head>
 
@@ -18,7 +18,7 @@
     <div class="navbackgroundcolor">
     <div class="container">
         
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
         <img src="./pictures/boutiquelogo.png" class="rounded mx-auto d-block" width="35%" alt="logo">
 
       <ul class="nav nav-pills">
@@ -29,86 +29,89 @@
         <li class="nav-item"><a href="./contactus.html" class="nav-link white">Contact Us</a></li>
       </ul>
 
-    </header>
-    <p class="phonenumber">Call Us Today! (208) 220-1695</p>
+    </div>
+    <p class="phonenumber">
+      <a class="lightpink" href="tel:2082201695">Call us at 208-220-1695</a>
+    </p>
   </div>
   </div>
 
 
-  <!-- top hero area -->
-  <div class="px-4 pt-5 text-center border-bottom herocolor">
-    <h1 class="display-4 fw-bold text-body-emphasis letterstyle">"Happiness, Love, Home"</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4 letterstyle">At Boutique Frenchies, we're committed to raising and sharing litters with loving families who are ready to adopt. Adopt Your Dream French Bulldog Today! Browse Our Adorable, Healthy Puppies, And Experience The Joy Of A Lifelong Companion. Don't Wait, Your Perfect Frenchie Is Just A Click Away! Let us guide you in finding your new best friend.</p>
+  <header>
+
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+  
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="./pictures/group videos/IMG_0326.mp4" type="video/mp4">
+    </video>
+  
+    <!-- The header content -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <div  class="justify-content-center letterstyle about">
+            <h1 class="display-4 fw-bold text-body-emphasis letterstyle"><span class="lightpink"> "Love, Happiness, Home"</span></h1>
+            <p class="lead mb-4 letterstyle white">At <span class="white fw-bold">Boutique Frenchies</span>, we're committed to raising and sharing litters with loving families who are ready to adopt. Adopt Your Dream French Bulldog Today! Browse Our Adorable, Healthy Puppies, And Experience The Joy Of A Lifelong Companion. Don't Wait, Your Perfect Frenchie Is Just A Click Away! Let us guide you in finding your new best friend.</p>
+
+            <h1 class="letterstyle mytimerhome"><span class="white"> Available to go home soon!</span></h1>
+    <!-- Display the countdown timer in an element -->
+    <div class="display-3 letterstyle mytimer">
+      <p id="demo"></p>
     </div>
     
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("March 13, 2024 06:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+    
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item">
-            <img src="./pictures/charlie.jpg" width="25%" height="25%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1 class="black letterstyle">Piece Of Mind</h1>
-                <p class="black letterstyle">We guarantee all of our puppies arrive in good health.</p>
-                <p><a class="btn btn-lg btn-primary" href="./contactus.html">Contact Us</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <img src="./pictures/pup2.jpg" width="25%" height="25%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1 class="black letterstyle">Good Health</h1>
-                <p class="black letterstyle">First vaccinations and documented health checks.</p>
-                <p><a class="btn btn-lg btn-primary" href="./aboutus.html">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./pictures/pup4.jpg" width="25%" height="25%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1 class="black letterstyle">Easy Delivery</h1>
-                <p class="black letterstyle">Easy adoption experience with safe and convenient delivery.</p>
-                <p><a class="btn btn-lg btn-primary" href="./gallery.html">Browse gallery</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-        <!-- <img src="./pictures/logo pic.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="frenchie pup" width="700" height="500" loading="lazy"> -->
-      
-
-    <!--footer-->
-  </div>
-    <div class="foots">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
-            <div class="col-md-4 d-flex align-items-center">
-              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-              </a>
-              
-              <p class="footcolor">© 2019 Boutique Frenchies. All Rights Reserved</p>
-            </div>
-        </footer>
     </div>
+  </header>
+
+<br>
 
 
 
-<script src="script.js"></script>
+
+      </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 

@@ -18,7 +18,7 @@
     <div class="navbackgroundcolor">
     <div class="container">
         
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
      
         <img src="./pictures/boutiquelogo.png" class="rounded mx-auto d-block" width="35%" alt="logo">
 
@@ -30,9 +30,168 @@
         <li class="nav-item"><a href="./contactus.html" class="nav-link white">Contact Us</a></li>
       </ul>
       
-    </header>
+    </div>
   </div>
   </div>
+
+
+
+
+  <!--Album statement-->
+  <header>
+
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+  
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="./pictures/group videos/IMG_0330.mp4" type="video/mp4">
+    </video>
+  
+    <!-- The header content -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3 letterstyle ">Available Puppies</h1>
+          <p class="lead  letterstyle white"><span class="display-4 light-brown">Boutique </span><span class="display-4 lightpink">Frenchies</span> are happy and sound as well as beautiful. A lot of careful planning went into producing each litter and the bloodlines, health and confirmation points of each dog has been carefully assessed. I take pride in our health and dedication for the betterment of the French bulldog breed.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+<br>  
+<h1 class="letterstyle mytimerhome">Available to go home soon!</h1>
+<!-- Display the countdown timer in an element -->
+<div class="display-3 letterstyle mytimer">
+  <p id="demo"></p>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("March 13, 2024 06:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+
+
+ 
+   <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./pictures/wilbur/IMG_0349.jpg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><span class="light-brown h3">Wilbur</span></text></svg>
+            <div class="card-body backgroundcolor">
+              <p class="card-text">Wilbur is a Male Blue Merle, who loves to play and cuddle</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm backgroundbuttonpink" href="./wilbur.html" role="button">View</a>
+                  <a class="btn btn-sm backgroundbuttonbrown" href="./contactus.html" role="button">Contact Us</a>
+                </div>
+                <small class="text-body-secondary  boldblack">$4000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./pictures/hudson/IMG_0359.jpg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><span class="light-brown h3">Hudson</span></text></svg>
+            <div class="card-body backgroundcolor">
+              <p class="card-text">Hudson is a Male Chocolate who loves to play</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm backgroundbuttonpink" href="./hudson.html" role="button">View</a>
+                  <a class="btn btn-sm backgroundbuttonbrown" href="./contactus.html" role="button">Contact Us</a>
+                </div>
+                <small class="text-body-secondary  boldblack">$4000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./pictures/london/IMG_0355.jpg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><span class="light-brown h3">London</span></text></svg>
+            <div class="card-body backgroundcolor">
+              <p class="card-text">London is a adventurous Female Blue Merle</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm backgroundbuttonpink" href="./london.html" role="button">View</a>
+                  <a class="btn btn-sm backgroundbuttonbrown" href="./contactus.html" role="button">Contact Us</a>
+                </div>
+                <small class="text-body-secondary  boldblack">$4000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./pictures/nova/IMG_0365.jpg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><span class="light-brown h3">Nova</span></text></svg>
+            <div class="card-body backgroundcolor">
+              <p class="card-text">Nova is a amazing looking Female Chocolate who loves to both, cuddle up and play</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm backgroundbuttonpink" href="./nova.html" role="button">View</a>
+                  <a class="btn btn-sm backgroundbuttonbrown" href="./contactus.html" role="button">Contact Us</a>
+                </div>
+                <small class="text-body-secondary  boldblack">$4000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./pictures/tatum/IMG_0371.jpg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><span class="light-brown h3">Tatum</span></text></svg>
+            <div class="card-body backgroundcolor">
+              <p class="card-text">Tatum is a cute cuddly Female Blue Merle</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-sm backgroundbuttonpink" href="./tatum.html" role="button">View</a>
+                  <a class="btn btn-sm backgroundbuttonbrown" href="./contactus.html" role="button">Contact Us</a>
+                </div>
+                <small class="text-body-secondary  boldblack">$4000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+   
+
+
+
+
+
+
+
 
 
   

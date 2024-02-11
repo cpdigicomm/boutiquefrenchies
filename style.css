@@ -1,3 +1,22 @@
+
+.pagevideo {
+  width: 100%;
+  height: auto;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .navbackgroundcolor {
     background-color:#6C545C ;
     font-family: qt basker;
@@ -65,15 +84,31 @@
 }
 
 .backgroundcolor {
-    background-color: lightpink;
+    background-color: #E7CBCB;
 }
 
 .phonenumberblack {
-    color: black;
+    color: lightpink;
     text-align: center;
     font-weight: bold;
     font-size: xx-large;
     font-family: qt basker;
+}
+
+.browndisplaywords {
+		color: #6C545C;
+		text-align: center;
+		font-weight: bold;
+		font-size: xx-large;
+		font-family: qt basker;
+}
+
+.pinkdisplaywords {
+	color: lightpink;
+	text-align: center;
+	font-weight: bold;
+	font-size: xx-large;
+	font-family: qt basker;
 }
 
 
@@ -91,6 +126,104 @@
 	padding-left: 25%;
 	padding-right: 25%;
 }
+
+.availablebackground {
+	background-color: #E7CBCB;
+}
+
+.boldblack {
+	color: black;
+	font-weight: bolder;
+}
+
+.pastpups {
+	font-family: qt basker;
+	font-size: xx-large;
+	font-weight: bold;
+	color: #4D3645;
+	text-align: center;
+	background-color: #E7CBCB;
+}
+
+.backgroundbuttonpink {
+	background-color: lightpink;
+	color: #6C545C;
+}
+
+.backgroundbuttonbrown {
+	background-color: #6C545C;
+	color: lightpink;
+}
+
+/* header video */
+header {
+	position: relative;
+	background-color: white;
+	height: 65vh;
+	min-height: 25rem;
+	width: 100%;
+	overflow: hidden;
+  }
+  
+  header video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+	position: relative;
+	z-index: 2;
+  }
+  
+  header .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 1;
+  }
+  
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+  @media (pointer: coarse) and (hover: none) {
+	header {
+	  background: url(./pictures/wilbur/IMG_0306.MOV) black no-repeat center center scroll;
+	}
+  
+	header video {
+	  display: none;
+	}
+  }
+  /*-------------------------------------------
+
+  /* timer */
+  .mytimer {
+	color: #6C545C;
+	text-align: center;
+  }
+  
+.mytimerhome {
+	color: #4D3645;
+	text-align: center;
+}
+
+
+
 
 
 
@@ -212,3 +345,19 @@ li {
 
 
    
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+	 
