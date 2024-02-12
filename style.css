@@ -122,9 +122,6 @@
 	font-family: qt basker;
 	font-size: x-large;
 	color: #4D3645;
-	text-align: center;
-	padding-left: 25%;
-	padding-right: 25%;
 }
 
 .availablebackground {
@@ -211,7 +208,7 @@ header {
 
   /* timer */
   .mytimer {
-	color: #6C545C;
+	color: lightpink;
 	text-align: center;
   }
   
