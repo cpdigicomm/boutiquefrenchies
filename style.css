@@ -202,12 +202,10 @@ header {
   
   @media (pointer: coarse) and (hover: none) {
 	header {
-	  background: url(./pictures/wilbur/IMG_0306.MOV) black no-repeat center center scroll;
+	  background: url() black no-repeat center center scroll;
 	}
   
-	header video {
-	  display: none;
-	}
+	
   }
   /*-------------------------------------------
 
